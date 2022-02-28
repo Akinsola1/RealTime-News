@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_news/widgets/cryptoprice.dart';
 import 'package:flutter_news/widgets/moreoption.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:line_icons/line_icon.dart';
@@ -55,6 +56,18 @@ class Mainpage extends StatelessWidget {
                   const SizedBox(height: 10),
                  const MoreOption(),
                  const SizedBox(height: 20,),
+                 Text(
+                   'Crypto Price',
+                   style: GoogleFonts.montserrat(
+                     color: Colors.grey.shade700,
+                      fontWeight: FontWeight.w700,
+                      fontSize: 25,
+                   )
+                 ),
+                 CryptoPrice(),
+                 const SizedBox(
+                     height: 20,
+                   ),
                   Text(
                     'Wall Street Journal',
                     style: GoogleFonts.montserrat(

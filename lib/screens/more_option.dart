@@ -22,8 +22,6 @@ class moreOption extends StatefulWidget {
 
 class _moreOptionState extends State<moreOption> {
   late Future<Options> moreOption;
-  List<Article> article = [];
-
   @override
   void initState() {
     moreOption = getOptions(widget.Option);

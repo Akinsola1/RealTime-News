@@ -20,11 +20,7 @@ class HeaderRow extends StatefulWidget {
 }
 
 class _HeaderRowState extends State<HeaderRow> {
-  bool imageNull = false;
   late Future<NewsModel> fetchnews;
-
-  List<Article> articles = [];
-  List<Source> source = [];
   @override
   void initState() {
     fetchnews = fetchNews();
